@@ -1,0 +1,87 @@
+there is two API
+  1. First API will send video id of every video of that playlist_link. Eg:-
+    
+//playlist of two videos
+
+    {
+      "contentDetails": {
+        "videoId": "RqiU5nzj_nU"
+      }
+    },
+    {
+      "contentDetails": {
+        "videoId": "T_U_VsHkc_Y"
+      }
+    }
+
+
+  2. We have to pass each video id in 2nd url and make a request. It will response
+   duration of that video
+
+
+   1H2M32S
+54M56S
+1H13M13S
+25M38S
+38M13S
+52M18S
+49M58S
+40M43S
+42M28S
+1H3M38S
+48M8S
+34M25S
+58M39S
+38M44S
+1H25S
+1H3M46S
+47M9S
+56M21S
+53M35S
+42M36S
+1H6M29S
+58M15S
+57M25S
+1H21M28S
+37M5S
+1H17M50S
+1H25M40S
+30M15S
+1H9M19S
+44M14S
+55M30S
+1H2M
+1H6M45S
+46M33S
+49M37S
+1H2M15S
+58M34S
+47M3S
+35M41S
+50M12S
+48M42S
+59M29S
+28M34S
+1H21M45S
+1H8M52S
+1H7M52S
+36M21S
+41M2S
+1H12M22S
+50M32S
+1H17M44S
+58M5S
+49M2S
+30M19S
+53M27S
+49M30S
+1H41M20S
+58M56S
+41M48S
+1H9M47S
+30M54S
+2H54M31S
+39M9S
+43M28S
+26M1S
+51M52S

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link rel="stylesheet" href="font\Hubballi\Hubballi-Regular.ttf">
+    <link rel="stylesheet" href="font\ananda-black-font\AnandaBlackPersonalUseRegular-rg9Rx.ttf">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yt Playlist Length</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div class="main">
+        <nav class="nav">
+            <ul class="nav-child">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+
+        </nav>
+        <nav class="m_nav">
+            <img style="object-fit: contain;" src="img/text.png" width="140px" alt="">
+            <a href="https://github.com/fardin-developer"> <img src="img/logo.png" alt="" width="35px">
+            </a>
+        </nav>
+        <hr>
+        <div class="container" style="text-align: center;">
+            <form method="POST">
+
+                <h1 class="h1">Youtube playlist length calculator:</h1>
+                <div class="input-group mb-3">
+
+                    <form class="form" action="" method="post">
+                        <input type="text" class="form-control" placeholder="youtube.com/playlist?list=ID"
+                            name="playlist_link">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn">Get Length</button>
+                        </div>
+                    </form>
+
+
+                </div>
+                <!-- <p style="font-size:small;">
+                    You can enter a playlist link, playlist ID or even a video link from the playlist!
+                    <br> This only works with playlists with upto 500 videos. Need more than that? <a href="">Check
+                        here.</a>
+                </p> -->
+            </form>
+        </div>
+
+        <div class="duration" style="text-align: center;">
+            <%if (data) {%>
+                <h1>
+                    <%=parseInt(data.minute /60) +" hours : "+ parseInt(data.minute%60)+" min : "+  (parseInt(data.minute%60))%60+" second"%>
+                </h1>
+                <h2 style="margin-top: -2rem;">
+                    <%= parseInt(data.minute / 1440) %> days : <%= parseInt((data.minute % 1440) / 60) %> hours : <%= parseInt((data.minute %
+                                1440) % 60) %> min : <%= parseInt(data.minute % 60) %> seconds
+                </h2>
+                <h3 style="margin-top: -1.6rem;">No of Vodeos: <%=data.totalVideo%></h3>
+                <%} %>
+
+        </div>
+
+        <footer class="page-footer" style="text-align: center; margin-top: 290px;font-size: smaller;">
+            <div class="footer-copyright text-center">
+                Made by <a href="https://github.com/fardin-developer?tab=repositories">Fardin Mustaque</a>
+            </div>
+            <div class="footer-copyright" style="color: green;">
+               Spread Love & help others  🤍 <a href="/">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
